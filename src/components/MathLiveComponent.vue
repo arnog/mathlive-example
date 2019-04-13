@@ -2,7 +2,7 @@
   <div>
     <h3>Mathlive-Component</h3>
     <h1>Euler's Identity</h1>
-    <p>$$e^{i\pi} + 1 = 0$$</p>
+    <p id="fla">$$e^{i\pi} + 1 = 0$$</p>
   </div>
 </template>
 
@@ -15,5 +15,7 @@ export default {
 };
 //eslint-disable-next-line
 console.log("MathLive-Component script called");
-MathLive.renderMathInDocument();
+MathLive.renderMathInDocument("fla");
+//eslint-disable-next-line
+console.log(MathLive.getOriginalContent("fla"));
 </script>
