@@ -1,7 +1,7 @@
-#Purpose
-This is an unsuccessful attempt to build a Vue component using MathLive.
-
 # mathlive-example
+
+A successful attempt at building Vue component using MathLive.
+
 
 ## Project setup
 ```
