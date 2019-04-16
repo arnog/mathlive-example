@@ -1,5 +1,5 @@
 <template>
-  <div class="mathfield" :id="id"><slot>f(x)=</slot></div>
+  <div class="mathfield" :id="id"><slot></slot></div>
 </template>
 
 <script>

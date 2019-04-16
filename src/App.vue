@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     $$e^{i\pi} + 1 = 0$$
-    <MathLiveComponent></MathLiveComponent>
+    <MathLiveComponent v-model="formula">g(x)=</MathLiveComponent>
+    <div id='output'>{{formula}}</div>
   </div>
 </template>
 
@@ -13,6 +14,9 @@ export default {
   name: "app",
   components: {
     MathLiveComponent
+  },
+  data: function() {
+    return { formula: 'h(x)' }
   },
   mounted: function() {
     MathLive.renderMathInDocument();
